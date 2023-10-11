@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Page</title>
+    <style>
+        body{
+            background-color: skyblue;
+            width: 100vw;
+            height: 100vh;
+        }
+        .content{
+            padding: 20px;
+            position: absolute;
+            border: 1px solid #f4f4f4;
+            border-radius: 10px;
+            line-height: 25px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+    <h3>Session Name : {{uname}}</h3>
+    <h3>Session Password : {{password}}</h3>
+    <a href="logout"><button>logout</button></a>
+    </div>
+
+    <table style="border: #444;">
+        <thead>
+            <th>name</th>
+        </thead>
+        <tbody>
+            <td>{{user_name}}</td>
+        </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+    </script>
+</body>
+</html>

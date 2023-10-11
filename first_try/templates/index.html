@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Framework</title>
+    <style>
+        body{
+            background-color: skyblue;
+            width: 100vw;
+            height: 100vh;
+        }
+        .content{
+            padding: 20px;
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #f4f4f4;
+            border-radius: 10px;
+            line-height: 25px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <form action="login" onsubmit="validation(name.value,pwd.value)" method="POST">
+            <h3>Login</h3>
+        <label for="name">Name</label><br>
+        <input type="text" name="name" id="name" placeholder="Enter Your Name"><br>
+        <label for="paswword">Password</label><br>
+        <input type="password" name="pwd" id="pwd" placeholder="Enter Your Password"><br>
+        <button class="btn btn-primary" style="float: right;">Login</button>
+    </form>
+    </div>
+
+    <script>
+        function validation(name,pwd){
+            if(name == ''){
+                alert('User name is required')
+                event.preventDefault()
+            }
+            else if(pwd == ''){
+                alert('Password is required')
+                event.preventDefault()
+            }
+            else{
+                alert('You are successfully login!')
+            }
+        }
+    </script>
+</body>
+</html>
